@@ -6,10 +6,8 @@ from GB import GameButton
 pygame.init()
 pygame.mixer.init()
 
-if getattr(sys, 'frozen', False):
-        pathh = sys._MEIPASS # When it is run as .exe
-else:
-        pathh = os.path.dirname(__file__)
+
+pathh = os.path.dirname(__file__)
 SCREEN_WIDTH= 600
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
